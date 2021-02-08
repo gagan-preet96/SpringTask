@@ -1,0 +1,20 @@
+Instruction to run this application.
+
+Step1- checkout from git repo (https://github.com/gagan-preet96/SpringTask.git)
+Step2- open it on eclipse and update project using (Maven -> update project)
+step 3- change database connection parameter (like url, user, password, schema name in url ) in application.properties
+Step-4- Run the application on server (	Run As -> Run on Server)
+Step-5 - open url http://localhost:8700/glaucus/api/incrementNumber
+Step 6-  open jmeter and open "glaucusTask.jmx". (File -> open and choose "glaucus.jmx" )
+Step -7  After loaded successfully then click on Home Page (inside jmeter project) and verify port no and protocol(http/https). For me, it's http and 8700.
+Step-8 click on start button.
+Step-9 for testing you can hit again this url (http://localhost:8700/glaucus/api/incrementNumber) on browser and verify the result.
+
+
+
+
+ Create table query-
+
+CREATE TABLE `number` (
+  `id` int NOT NULL
+)
